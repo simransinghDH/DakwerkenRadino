@@ -1,0 +1,101 @@
+﻿<section id="gallery-section">
+    <div class="container">
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="text-uppercase text-center">
+                    Onze gallerij
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                <a href="@Url.Content("~/Images/gallery/FullSizeRender-5.jpg")" data-toggle="lightbox" data-gallery="multiimages">
+                    <img class="img-responsive img-rounded" src="@Url.Content("~/Images/gallery/thumbnails/FullSizeRender-5_thumb.jpg")" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="@Url.Content("~/Images/gallery/FullSizeRender-6.jpg")" data-toggle="lightbox" data-gallery="multiimages">
+                    <img class="img-responsive img-rounded" src="@Url.Content("~/Images/gallery/thumbnails/FullSizeRender-6_thumb.jpg")" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="@Url.Content("~/Images/gallery/IMG_0948.jpg")" data-toggle="lightbox" data-gallery="multiimages">
+                    <img class="img-responsive img-rounded" src="@Url.Content("~/Images/gallery/thumbnails/IMG_0948_thumb.jpg")" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="@Url.Content("~/Images/gallery/IMG_1013.jpg")" data-toggle="lightbox" data-gallery="multiimages">
+                    <img class="img-responsive img-rounded" src="@Url.Content("~/Images/gallery/thumbnails/IMG_1013_thumb.jpg")" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                <a href="@Url.Content("~/Images/gallery/IMG_1047.jpg")" data-toggle="lightbox" data-gallery="multiimages">
+                    <img class="img-responsive img-rounded" src="@Url.Content("~/Images/gallery/thumbnails/IMG_1047_thumb.jpg")" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="@Url.Content("~/Images/gallery/IMG_1056.jpg")" data-toggle="lightbox" data-gallery="multiimages">
+                    <img class="img-responsive img-rounded" src="@Url.Content("~/Images/gallery/thumbnails/IMG_1056_thumb.jpg")" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+</section>
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/lightbox")
+
+    <script type="text/javascript">
+        $('li.nav-gallery').addClass("active");
+        $(document).delegate('*[data-toggle="lightbox"]', 'click', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+}
