@@ -1,0 +1,110 @@
+﻿@Html.Action("HomeCarousel")
+
+<section id="marketing-section">
+    <div class="container marketing">
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="img-circle" src="@Url.Content("~/Images/marketing/marketing-1.png")" alt="Dakenherstel" style="width: 160px; height: 160px;">
+                <h2>Dakrenovatie</h2>
+                <p>Wij bieden u steeds de beste kwaliteit bij de keuze van uw dak. Alle producten die we gebruiken voldoen aan strenge kwaliteitsnormen.</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="img-circle" src="@Url.Content("~/Images/marketing/marketing-2.png")" alt="Isolatie" style="width: 160px; height: 160px;">
+                <h2>Isolatie</h2>
+                <p>
+                    Denk eraan dat het dak maar eenmaal gerenoveerd wordt. Het is daarom niet onbelangrijk om voor een dikke isolatie te opteren, zodat de dakisolatie niet achterhaald is na enkele jaren.
+                    De dikte van de isolatielaag heeft bovendien amper invloed op de werkkosten of uurlonen.
+                </p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="img-circle" src="@Url.Content("~/Images/marketing/marketing-4.png")" alt="Roofing" style="width: 160px; height: 160px;">
+                <h2>Gevelbekleding</h2>
+                <p>
+                    In de meeste gebouwen vormen de muren, na het dak, één van de belangrijkste bronnen van warmteverlies. Het is daarom belangrijk ook de buitenmuren goed te isoleren.
+                    Zo worden koudebruggen tot een minimum herleid.
+                </p>
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+        <div class="row">
+            <button type="button" class="btn btn-danger btn-lg">@Html.ActionLink("En zoveel meer...", "About", "Home")</button>
+        </div>
+    </div>
+</section>
+
+<section id="project-section-small">
+    <div class="container marketing">
+
+        <h1 class="text-center text-uppercase">Een glimp op onze projecten</h1>
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Renovatie van hellende daken volgens sarkingprincipe.</h2>
+                <p class="lead text-justify">
+                    Bij een sarking opbouw worden PIR of PUR isolatieplaten bovenop de draagstructuur geplaatst. Het grote voordeel hiervan is dat het dak doorlopend geïsoleerd is zonder koude bruggen.
+                    <br />Ook is er geen ruimteverlies aan de binnenkant en de huidige binnen afwerking kan behouden worden.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive img-rounded" src="@Url.Content("~/Images/projects/sarking.jpg")" alt="Project dakbekleding">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive img-rounded" src="@Url.Content("~/Images/projects/dakdetails.jpg")" alt="Project padouk">
+            </div>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Opbouw en uitvoering van de dakdetails.<br/><span class="text-muted">Zie voor uzelf.</span></h2>
+                <p class="lead text-justify">Naar de afwerking toe opteren wij voor een harde houtsoort zoals Padouk.
+                                    De keuze tussen hang- en bakgoten wordt voornamelijk door esthetische redenen bepaald.<br />
+                                    Een dak dat over de muren steekt, is ook gunstig om de slagregenbelasting op de gevelmuren te beperken.</p>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Na-isoleren en bekleden van gevels.<br/><span class="text-muted">Nog twijfels?</span></h2>
+                <p class="lead text-justify">De buitengevel isoleren is besparend en doet uw gevel er terug nieuw uitzien.
+                        Om uw huis een persoonlijke uitstraling te geven kan u kiezen tussen diverse houtsoorten die geschikt zijn voor buiten.<br />
+                        De gevel kan in verschillende materialen worden afgewerkt waaronder Quartz-zinc of Anthra-zinc (staande naad), leien, sidings, Padouk, Ceder, enz.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive img-rounded" src="@Url.Content("~/Images/projects/gevelbekleding.jpg")" alt="Project gevelbekleding">
+            </div>
+        </div>
+    </div><!-- /.container -->
+
+    <div id="all-projects-panel-small">
+        <div class="container">
+            <h1 class="text-center text-uppercase">Neem een kijkje naar al onze projecten</h1>
+            @Html.ActionLink("Alle projecten", "Index", "Work", null, new { @class = "btn btn-custom text-uppercase btn-lg", @role = "button" })
+        </div>
+    </div>
+</section>
+
+@Html.Action("WhoWeAre")
+
+@section scripts
+{
+    <script type="text/javascript">
+        $('.carousel').carousel({
+            wrap: true,
+            interval: 4000
+        });
+
+        var $window = $(window);
+        var $buttons = $('.carousel-inner a.btn');
+
+        $(window).on('resize', function () {
+            if ($window.width() < 767) {
+                $buttons.addClass('btn-xs');
+            } else {
+                $buttons.removeClass('btn-xs');
+            };
+        });
+    </script>
+}
