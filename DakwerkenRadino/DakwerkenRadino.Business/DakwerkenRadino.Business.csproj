@@ -65,6 +65,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -77,6 +78,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppSetting\ConfigurationReader.cs" />
+    <Compile Include="AppSetting\IConfigurationReader.cs" />
+    <Compile Include="Email\EmailProcessor.cs" />
+    <Compile Include="Email\IEmailProcessor.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ContactFormModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -87,6 +92,13 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DakwerkenRadino.Core\DakwerkenRadino.Core.csproj">
+      <Project>{a319efb3-33a7-42a7-a6f5-ff85713c88ff}</Project>
+      <Name>DakwerkenRadino.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -22,6 +22,7 @@ E:\Documenten\CodeRepo\DakwerkenRadino\Branches\Development\DakwerkenRadino\Dakw
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\DakwerkenRadino.Business.dll.config
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\DakwerkenRadino.Business.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\DakwerkenRadino.Business.pdb
+E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\DakwerkenRadino.Core.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\EntityFramework.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\EntityFramework.SqlServer.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\log4net.dll
@@ -29,12 +30,13 @@ E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadin
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\Microsoft.Owin.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\Owin.dll
+E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\DakwerkenRadino.Core.pdb
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\EntityFramework.xml
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\EntityFramework.SqlServer.xml
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\log4net.xml
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\Microsoft.Owin.xml
+E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\obj\Debug\DakwerkenRadino.Business.csprojResolveAssemblyReference.cache
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\obj\Debug\DakwerkenRadino.Business.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\obj\Debug\DakwerkenRadino.Business.pdb
-E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\obj\Debug\DakwerkenRadino.Business.csprojResolveAssemblyReference.cache

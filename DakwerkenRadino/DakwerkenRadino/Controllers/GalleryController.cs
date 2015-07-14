@@ -13,5 +13,10 @@ namespace DakwerkenRadino.Controllers
 
             return View();
         }
+
+        public PartialViewResult PhotoswipeOverlay()
+        {
+            return PartialView("_Photoswipe");
+        }
     }
 }

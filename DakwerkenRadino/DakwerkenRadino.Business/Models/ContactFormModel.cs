@@ -63,7 +63,7 @@ namespace DakwerkenRadino.Business.Models
             } 
         }
 
-        public int SelectedSortOfJob { get; set; }
+        public string[] SelectedSortOfJob { get; set; }
 
         [DisplayName("Uw bericht")]
         [DataType(DataType.MultilineText)]

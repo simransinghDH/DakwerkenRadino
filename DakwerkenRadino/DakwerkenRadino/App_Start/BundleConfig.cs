@@ -7,8 +7,9 @@ namespace DakwerkenRadino
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+            bundles.Add(new ScriptBundle("~/bundles/common").Include(
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/custom/custom.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -25,7 +26,8 @@ namespace DakwerkenRadino
 
             bundles.Add(new ScriptBundle("~/bundles/photoswipe").Include(
                       "~/Scripts/photoswipe/photoswipe-ui-default.min.js",
-                      "~/Scripts/photoswipe/photoswipe.min.js"));
+                      "~/Scripts/photoswipe/photoswipe.min.js",
+                      "~/Scripts/photoswipe/photoswipe-custom.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",

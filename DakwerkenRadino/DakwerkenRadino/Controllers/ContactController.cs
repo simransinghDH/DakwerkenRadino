@@ -9,17 +9,21 @@ namespace DakwerkenRadino.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Contact";
-            ViewBag.MetaDescription =
-                "Aarzel niet en vraag een gratis offerte aan!";
-            var contactFormModel = new ContactFormModel();
-            return View(contactFormModel);
+            ViewBag.MetaDescription = "Aarzel niet en vraag een gratis offerte aan!";
+
+            return View(new ContactFormModel());
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult SendMail(ContactFormModel contactFormModel)
         {
-            return View("Index", contactFormModel);
+            if (ModelState.IsValid)
+            {
+
+            }
+
+            return View(contactFormModel);
         }
     }
 }
