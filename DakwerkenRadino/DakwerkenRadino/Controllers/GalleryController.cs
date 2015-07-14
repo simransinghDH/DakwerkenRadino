@@ -4,7 +4,7 @@ namespace DakwerkenRadino.Controllers
 {
     public class GalleryController : Controller
     {
-        [Route("onzegallerij")]
+        [Route("gallerij")]
         public ActionResult Index()
         {
             ViewBag.Title = "Gallerij";

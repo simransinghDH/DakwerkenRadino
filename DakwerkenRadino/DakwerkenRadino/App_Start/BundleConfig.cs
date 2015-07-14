@@ -23,14 +23,18 @@ namespace DakwerkenRadino
                       "~/Scripts/respond.js",
                       "~/Scripts/bootstrap-select/bootstrap-select.js"));
 
-            bundles.Add(new StyleBundle("~/bundles/lightbox").Include(
-                     "~/Scripts/ekko-lightbox.js"));
+            bundles.Add(new ScriptBundle("~/bundles/photoswipe").Include(
+                      "~/Scripts/photoswipe/photoswipe-ui-default.min.js",
+                      "~/Scripts/photoswipe/photoswipe.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/bootstrap-select.css",
-                      "~/Content/site.css",
-                      "~/Content/ekko-lightbox.css"));
+                      "~/Content/Site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/photoswipe").Include(
+                      "~/Content/photoswipe/photoswipe.css",
+                      "~/Content/photoswipe/default-skin/default-skin.css"));
         }
     }
 }

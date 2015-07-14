@@ -699,6 +699,13 @@ footer .pull-right-responsive {
     border-radius: 2px;
 }
 
+#gallery-section .row figure figcaption {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #F2DCC2;
+}
+
 /*
                       _ _                   _           _       
                  __ _| | |  _ __  _ __ ___ (_) ___  ___| |_ ___ 

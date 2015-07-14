@@ -1,33 +1,35 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
+        <title>Dakwerken Radino - @ViewBag.Title</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <meta name="robots" content="noindex, nofollow"/>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="@ViewBag.MetaDescription">
         <meta name="author" content="Singhularity">
-        <title>Dakwerken Radino - @ViewBag.Title</title>
+        <meta name="keywords" content="dakwerken, de haan, radino" />
+        <meta property="og:title" content="@ViewBag.Title" />
+        <meta property="og:description" content="@ViewBag.MetaDescription" />
+        <meta property="og:site_name" content="Dakwerken Radino" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         @Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/modernizr")
+        @RenderSection("styles", false)
         <script type="text/javascript" src="@Url.Content("~/Scripts/appInsights.js")" language="javascript" ></script>
     </head>
     <body>
-        @Html.Action("NavigationBar", "Home")
-        @RenderBody()
+        <div itemscope itemtype="http://schema.org/LocalBusiness">
+            @Html.Action("NavigationBar", "Home")
+            @RenderBody()
 
-        @Html.Action("Footer", "Home")
+            @Html.Action("Footer", "Home")
+        </div>
     
         @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/bootstrap")
         @RenderSection("scripts", false)
-
-        <script type="text/javascript">
-            $('.scrollToTop').click(function () {
-                $('html, body').animate({ scrollTop: 0 }, 800);
-                return false;
-            });
-        </script>
+        <script type="text/javascript" src="~/Scripts/custom/custom.js"></script>
     </body>
 </html>

@@ -12,7 +12,7 @@ namespace DakwerkenRadino.Controllers
             return View();
         }
 
-        [Route("overons")]
+        [Route("over-ons")]
         public ActionResult About()
         {
             ViewBag.Title = "Over ons";
