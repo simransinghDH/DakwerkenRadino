@@ -1,5 +1,5 @@
-[assembly: WebActivator.PreApplicationStartMethod(typeof(DakwerkenRadino.App_Start.NinjectWebCommon), "Start")]
-[assembly: WebActivator.ApplicationShutdownMethodAttribute(typeof(DakwerkenRadino.App_Start.NinjectWebCommon), "Stop")]
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(DakwerkenRadino.App_Start.NinjectWebCommon), "Start")]
+[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(DakwerkenRadino.App_Start.NinjectWebCommon), "Stop")]
 
 namespace DakwerkenRadino.App_Start
 {
@@ -10,6 +10,8 @@ namespace DakwerkenRadino.App_Start
 
     using Ninject;
     using Ninject.Web.Common;
+    using DakwerkenRadino.Business.Email;
+    using DakwerkenRadino.Business.AppSetting;
 
     public static class NinjectWebCommon 
     {
@@ -40,11 +42,19 @@ namespace DakwerkenRadino.App_Start
         private static IKernel CreateKernel()
         {
             var kernel = new StandardKernel();
-            kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
-            kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
-            
-            RegisterServices(kernel);
-            return kernel;
+            try
+            {
+                kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
+                kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
+
+                RegisterServices(kernel);
+                return kernel;
+            }
+            catch
+            {
+                kernel.Dispose();
+                throw;
+            }
         }
 
         /// <summary>
@@ -53,7 +63,8 @@ namespace DakwerkenRadino.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            System.Web.Mvc.DependencyResolver.SetResolver(new Infrastructure.NinjectDependencyResolver(kernel));
+            kernel.Bind<IEmailProcessor>().To<EmailProcessor>();
+            kernel.Bind<IConfigurationReader>().To<ConfigurationReader>();
         }        
     }
 }
