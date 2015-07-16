@@ -23,22 +23,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DakwerkenRadino.Core", "Dak
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages", "Packages", "{D097ADF4-BC09-4300-8AC6-EBDBE1E768F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DakwerkenRadino.Tests", "DakwerkenRadino.Tests\DakwerkenRadino.Tests.csproj", "{6C5C0A8A-0D2B-43C4-B35B-ECE42A26D7CC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9157202-3D4E-45F6-B1D6-4BDF801C5442} = {A9157202-3D4E-45F6-B1D6-4BDF801C5442}
+		{A319EFB3-33A7-42A7-A6F5-FF85713C88FF} = {A319EFB3-33A7-42A7-A6F5-FF85713C88FF}
+		{D612D6F1-129D-46A7-A3F5-97FA11EB56D9} = {D612D6F1-129D-46A7-A3F5-97FA11EB56D9}
+	EndProjectSection
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 4
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://ssinghtheref.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = DakwerkenRadino.Business\\DakwerkenRadino.Business.csproj
-		SccProjectName1 = DakwerkenRadino.Business
-		SccLocalPath1 = DakwerkenRadino.Business
-		SccProjectUniqueName2 = DakwerkenRadino\\DakwerkenRadino.Web.csproj
-		SccProjectName2 = DakwerkenRadino
-		SccLocalPath2 = DakwerkenRadino
-		SccProjectUniqueName3 = DakwerkenRadino.Core\\DakwerkenRadino.Core.csproj
-		SccProjectName3 = DakwerkenRadino.Core
-		SccLocalPath3 = DakwerkenRadino.Core
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -56,6 +48,10 @@ Global
 		{A319EFB3-33A7-42A7-A6F5-FF85713C88FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A319EFB3-33A7-42A7-A6F5-FF85713C88FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A319EFB3-33A7-42A7-A6F5-FF85713C88FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C5C0A8A-0D2B-43C4-B35B-ECE42A26D7CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C5C0A8A-0D2B-43C4-B35B-ECE42A26D7CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C5C0A8A-0D2B-43C4-B35B-ECE42A26D7CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C5C0A8A-0D2B-43C4-B35B-ECE42A26D7CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

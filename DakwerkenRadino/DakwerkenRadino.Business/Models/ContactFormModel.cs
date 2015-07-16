@@ -7,14 +7,10 @@ namespace DakwerkenRadino.Business.Models
 {
     public class ContactFormModel
     {
-        private readonly IEnumerable<SelectListItem> jobs = new List<SelectListItem>
-            {
-                new SelectListItem { Text = "Roofing", Value = "roofing" },
-                new SelectListItem { Text = "Pannen", Value = "pannen" },
-                new SelectListItem { Text = "Zinken en koper", Value = "zinkkoper" },
-                new SelectListItem { Text = "Isolatie", Value = "isolatie" },
-                new SelectListItem { Text = "Gevelbekleding", Value = "gevelbekleding" }
-            };
+        public ContactFormModel()
+        {
+            SelectedSortOfJob = new string[5];        
+        }
 
         [Required(ErrorMessage = "Gelieve uw e-mailadres in te geven")]
         [RegularExpression(@"\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}\b", ErrorMessage = "Uw e-mailadres is niet correct")]

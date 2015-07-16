@@ -6,7 +6,7 @@
             <div class="col-lg-6">
                 <h2 class="text-center text-uppercase">Vraag een gratis offerte aan, aarzel niet!</h2>
 
-                @using (Html.BeginForm("SendMail", "Contact", FormMethod.Post, new { @class = "form-horizontal", @role = "form", @id = "contact-form" }))
+                @using (Html.BeginForm("Contact", "Contact", FormMethod.Post, new { @class = "form-horizontal", @role = "form", @id = "contact-form" }))
                 {
                     @Html.AntiForgeryToken()
                     @Html.ValidationSummary(true)
@@ -127,6 +127,21 @@
     @Scripts.Render("~/bundles/jqueryval")
     <script type="text/javascript">
         $('li.nav-contact').addClass("active");
+
+        var mailSuccess = @ViewBag.MailSent;
+        if (mailSuccess) {
+            var firstColumn = $('.col-lg-6').first();
+            if (firstColumn != null) {
+                var formItems = firstColumn.children();
+                if (formItems != null && formItems.length > 0) {
+                    formItems.each(function () {
+                        var currentItem = $(this);
+                        currentItem.hide();
+                    });
+                }
+            }
+        }
+
         $(function() {
             $('[data-toggle="popover"]').popover({
                 placement: "top",

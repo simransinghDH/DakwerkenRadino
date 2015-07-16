@@ -1,13 +1,24 @@
 ﻿using System.Web.Mvc;
 using DakwerkenRadino.Business.Models;
+using DakwerkenRadino.Business.Email;
 
 namespace DakwerkenRadino.Controllers
 {
     public class ContactController : Controller
     {
-        [Route("contact")]
-        public ActionResult Index()
+        private IEmailProcessor emailProcessor { get; set; }
+
+        public ContactController(IEmailProcessor emailProcessor)
         {
+            this.emailProcessor = emailProcessor;
+        }
+
+        [Route("contact")]
+        public ActionResult Contact()
+        {
+            bool isMailResult;
+            bool.TryParse(Request.QueryString["mail"], out isMailResult);
+            ViewBag.ShowSuccessMessage = isMailResult;
             ViewBag.Title = "Contact";
             ViewBag.MetaDescription = "Aarzel niet en vraag een gratis offerte aan!";
 
@@ -16,14 +27,12 @@ namespace DakwerkenRadino.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult SendMail(ContactFormModel contactFormModel)
+        public ActionResult Contact(ContactFormModel contactFormModel)
         {
-            if (ModelState.IsValid)
-            {
+            if (!ModelState.IsValid) return View(contactFormModel);
 
-            }
-
-            return View(contactFormModel);
+            //emailProcessor.Send(contactFormModel);
+            return RedirectToAction("Contact", new { mail = true });
         }
     }
 }
