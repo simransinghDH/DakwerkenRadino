@@ -25,7 +25,7 @@ namespace DakwerkenRadino
                       "~/Scripts/bootstrap-select/bootstrap-select.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/photoswipe").Include(
-                      "~/Scripts/photoswipe/photoswipe-ui-default.min.js",
+                      "~/Scripts/photoswipe/photoswipe-ui-default.js",
                       "~/Scripts/photoswipe/photoswipe.js",
                       "~/Scripts/photoswipe/photoswipe-custom.js"));
 
@@ -34,7 +34,7 @@ namespace DakwerkenRadino
                       "~/Content/bootstrap-select.css",
                       "~/Content/Site.css"));
 
-            bundles.Add(new StyleBundle("~/Content/photoswipe").Include(
+            bundles.Add(new StyleBundle("~/Content/photoswipe-styling").Include(
                       "~/Content/photoswipe/photoswipe.css",
                       "~/Content/photoswipe/default-skin/default-skin.css"));
         }
