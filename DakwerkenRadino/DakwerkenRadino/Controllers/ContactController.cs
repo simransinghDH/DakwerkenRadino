@@ -13,6 +13,7 @@ namespace DakwerkenRadino.Controllers
             this.emailProcessor = emailProcessor;
         }
 
+        [HttpGet]
         [Route("contact")]
         public ActionResult Contact()
         {
@@ -29,10 +30,20 @@ namespace DakwerkenRadino.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Contact(ContactFormModel contactFormModel)
         {
-            if (!ModelState.IsValid) return View(contactFormModel);
+            if (!ModelState.IsValid) return View();
 
             //emailProcessor.Send(contactFormModel);
             return RedirectToAction("Contact", new { mail = true });
+        }
+
+        public ActionResult ContactInformation()
+        {
+            return PartialView("_ContactInformation");
+        }
+
+        public ActionResult ContactForm()
+        {
+            return PartialView("_ContactForm");
         }
     }
 }

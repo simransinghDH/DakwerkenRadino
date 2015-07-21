@@ -28,9 +28,10 @@ namespace DakwerkenRadino.Tests.Email
         }
 
         [Test]
-        public void Send_CorrectCredentials_Test()
+        public async void Send_CorrectCredentials_Test()
         {
-            Assert.IsTrue(emailProcessor.Send(TestData.ContactFormModel));
+            bool result = await emailProcessor.Send(TestData.ContactFormModel);
+            Assert.IsTrue(result);
         }
     }
 }

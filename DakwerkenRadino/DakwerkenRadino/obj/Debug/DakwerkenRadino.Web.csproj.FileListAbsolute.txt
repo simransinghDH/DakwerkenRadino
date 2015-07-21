@@ -68,6 +68,9 @@ E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadin
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\Elmah.Mvc.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\EntityFramework.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\EntityFramework.SqlServer.dll
+E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\Glimpse.AspNet.dll
+E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\Glimpse.Core.dll
+E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\Glimpse.Mvc5.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\ImageResizer.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\ImageResizer.Mvc.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\ImageResizer.Plugins.DiskCache.dll
@@ -98,6 +101,7 @@ E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadin
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\System.Web.WebPages.Deployment.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\System.Web.WebPages.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\System.Web.WebPages.Razor.dll
+E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\WebActivatorEx.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\WebGrease.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\DakwerkenRadino.Business.pdb
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\Antlr3.Runtime.pdb
@@ -131,7 +135,3 @@ E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadin
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\obj\Debug\DakwerkenRadino.Web.csprojResolveAssemblyReference.cache
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\obj\Debug\DakwerkenRadino.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\obj\Debug\DakwerkenRadino.pdb
-E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\WebActivatorEx.dll
-E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\Glimpse.Core.dll
-E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\Glimpse.AspNet.dll
-E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\Glimpse.Mvc5.dll

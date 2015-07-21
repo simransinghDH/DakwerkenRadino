@@ -20,28 +20,36 @@ namespace DakwerkenRadino.Business.Email
             this.configurationReader = configurationReader;
         }
 
-        public bool Send(ContactFormModel contactFormModel)
+        public async Task<bool> Send(ContactFormModel contactFormModel)
         {
-            var message = new MailMessage();
-            var smtpClient = new SmtpClient();
-            var SmtpUser = new NetworkCredential();
-
             try
             {
-                message.From = new MailAddress(contactFormModel.EmailAddres, contactFormModel.Name);
-                message.To.Add(new MailAddress(DakwerkenRadino.Core.Keys.Email.Destination, DakwerkenRadino.Core.Keys.Email.Destination));
-                message.IsBodyHtml = false;
-                message.Subject = DakwerkenRadino.Core.Keys.Email.Subject;
-                message.Body = "TEST";
+                using (var message = new MailMessage())
+                {
+                    message.From = new MailAddress(contactFormModel.EmailAddres, contactFormModel.Name);
+                    message.To.Add(new MailAddress(DakwerkenRadino.Core.Keys.Email.Destination, DakwerkenRadino.Core.Keys.Email.Destination));
+                    message.IsBodyHtml = false;
+                    message.Subject = DakwerkenRadino.Core.Keys.Email.Subject;
+                    message.Body = string.Format(DakwerkenRadino.Core.Keys.Email.Message,
+                        contactFormModel.Name, contactFormModel.EmailAddres, contactFormModel.PhoneNumber, contactFormModel.StreetAndNumber,
+                        contactFormModel.Zipcode, contactFormModel.StreetAndNumber, string.Join(" ", contactFormModel.SelectedSortOfJob),
+                        contactFormModel.Message);
 
-                SmtpUser.UserName = configurationReader.GetValue(AppSettings.Username);
-                SmtpUser.Password = configurationReader.GetValue(AppSettings.Password);
+                    var smtpUser = new NetworkCredential
+                    {
+                        UserName = configurationReader.GetValue(AppSettings.Username),
+                        Password = configurationReader.GetValue(AppSettings.Password)
+                    };
 
-                smtpClient.UseDefaultCredentials = false;
-                smtpClient.Credentials = SmtpUser;
-                smtpClient.Host = configurationReader.GetValue(AppSettings.Host);
-                smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
-                smtpClient.Send(message);
+                    using (var smtpClient = new SmtpClient())
+                    {
+                        smtpClient.UseDefaultCredentials = false;
+                        smtpClient.Credentials = smtpUser;
+                        smtpClient.Host = configurationReader.GetValue(AppSettings.Host);
+                        smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+                        await smtpClient.SendMailAsync(message);
+                    }
+                }
             }
             catch (SmtpException smtpException)
             {
