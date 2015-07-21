@@ -26,7 +26,7 @@ namespace DakwerkenRadino
 
             bundles.Add(new ScriptBundle("~/bundles/photoswipe").Include(
                       "~/Scripts/photoswipe/photoswipe-ui-default.min.js",
-                      "~/Scripts/photoswipe/photoswipe.min.js",
+                      "~/Scripts/photoswipe/photoswipe.js",
                       "~/Scripts/photoswipe/photoswipe-custom.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(

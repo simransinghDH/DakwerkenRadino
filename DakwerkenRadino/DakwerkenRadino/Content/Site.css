@@ -256,7 +256,12 @@ h1 {
 
 #marketing-section > .marketing > .row > button > a {
     color: #f8f7f5;
-} 
+}
+
+.container .marketing .img-rounded {
+    width: 160px;
+    height: 160px;
+}
 
 /*
                     _           _               _ _                          
