@@ -32,7 +32,7 @@ namespace DakwerkenRadino.Business.Email
                     message.Subject = DakwerkenRadino.Core.Keys.Email.Subject;
                     message.Body = string.Format(DakwerkenRadino.Core.Keys.Email.Message,
                         contactFormModel.Name, contactFormModel.EmailAddres, contactFormModel.PhoneNumber, contactFormModel.StreetAndNumber,
-                        contactFormModel.Zipcode, contactFormModel.StreetAndNumber, string.Join(" ", contactFormModel.SelectedSortOfJob),
+                        contactFormModel.Zipcode, contactFormModel.City, string.Join(" ", contactFormModel.SelectedSortOfJob),
                         contactFormModel.Message);
 
                     var smtpUser = new NetworkCredential
@@ -46,6 +46,7 @@ namespace DakwerkenRadino.Business.Email
                         smtpClient.UseDefaultCredentials = false;
                         smtpClient.Credentials = smtpUser;
                         smtpClient.Host = configurationReader.GetValue(AppSettings.Host);
+                        smtpClient.Port = 26;
                         smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
                         await smtpClient.SendMailAsync(message);
                     }
