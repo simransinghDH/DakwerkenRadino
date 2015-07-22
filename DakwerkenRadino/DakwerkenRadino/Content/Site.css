@@ -209,10 +209,14 @@ h1 {
 
 @media all and (max-width: 767px) {
     .carousel-caption h1 {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     .carousel-caption p.subtext {
+        display: none;
+    }
+
+    #myCarousel .btn.btn-lg.btn-primary {
         display: none;
     }
 }
@@ -591,7 +595,6 @@ footer .pull-right-responsive {
     text-align: center;
 }
 
-
 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
     width: 90%;
 }
@@ -621,6 +624,18 @@ footer .pull-right-responsive {
 
     #contact-section form.form-horizontal .has-feedback .form-control-feedback {
         right: 70px;
+    }
+
+    .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+        width: 85%;
+    }
+
+    #contact-section form .bootstrap-select.form-control:not([class*="col-"]) {
+        width: 85%;
+    }
+
+    #contact-section form input, select, textarea {
+        max-width: 85%;
     }
 }
 
