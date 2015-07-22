@@ -32,7 +32,7 @@ namespace DakwerkenRadino.Business.Email
                     message.Subject = DakwerkenRadino.Core.Keys.Email.Subject;
                     message.Body = string.Format(DakwerkenRadino.Core.Keys.Email.Message,
                         contactFormModel.Name, contactFormModel.EmailAddres, contactFormModel.PhoneNumber, contactFormModel.StreetAndNumber,
-                        contactFormModel.Zipcode, contactFormModel.City, string.Join(" ", contactFormModel.SelectedSortOfJob),
+                        contactFormModel.Zipcode, contactFormModel.City, string.Join(", ", contactFormModel.SelectedSortOfJob),
                         contactFormModel.Message);
 
                     var smtpUser = new NetworkCredential

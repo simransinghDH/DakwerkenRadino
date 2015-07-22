@@ -365,7 +365,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\_NavigationBar.cshtml" />
     <Content Include="Views\Home\_Carousel.cshtml" />
-    <Content Include="Views\Contact\Contact.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Home\_Footer.cshtml" />
     <Content Include="Views\Gallery\Index.cshtml" />
     <Content Include="Views\Work\Index.cshtml" />

@@ -52,7 +52,7 @@ namespace DakwerkenRadino.Business.Models
                 {
                     new SelectListItem { Text = "Roofing", Value = "roofing" },
                     new SelectListItem { Text = "Pannen", Value = "pannen" },
-                    new SelectListItem { Text = "Zink en koper", Value = "zinkkoper" },
+                    new SelectListItem { Text = "Zink en koper", Value = "zink en koper" },
                     new SelectListItem { Text = "Isolatie", Value = "isolatie" },
                     new SelectListItem { Text = "Gevelbekleding", Value = "gevelbekleding" }
                 };
