@@ -40,3 +40,5 @@ E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadin
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\obj\Debug\DakwerkenRadino.Business.csprojResolveAssemblyReference.cache
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\obj\Debug\DakwerkenRadino.Business.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\obj\Debug\DakwerkenRadino.Business.pdb
+E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\DakwerkenRadino.Business.dll.CodeAnalysisLog.xml
+E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino.Business\bin\Debug\DakwerkenRadino.Business.dll.lastcodeanalysissucceeded
