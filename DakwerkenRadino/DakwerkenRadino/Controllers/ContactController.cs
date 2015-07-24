@@ -15,6 +15,7 @@ namespace DakwerkenRadino.Controllers
             this.emailProcessor = emailProcessor;
         }
 
+        [OutputCache(Duration = 7200, VaryByParam = "mail")]
         public ActionResult Index()
         {
             bool isMailResult;
@@ -42,7 +43,7 @@ namespace DakwerkenRadino.Controllers
             return PartialView("_ContactInformation");
         }
 
-        public ActionResult ContactForm()
+        public ActionResult ContactForm(ContactFormModel contactFormModel)
         {
             return PartialView("_ContactForm");
         }

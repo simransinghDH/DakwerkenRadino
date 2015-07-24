@@ -30,7 +30,6 @@ namespace DakwerkenRadino
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/bootstrap-select.css",
                       "~/Content/Site.css"));
 
             bundles.Add(new StyleBundle("~/Content/photoswipe-styling").Include(

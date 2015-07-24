@@ -235,6 +235,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-select.css" />
+    <Content Include="Content\bootstrap-select.min.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="favicon.ico" />
@@ -277,7 +278,6 @@
     <Content Include="Images\projects\dakdetails.jpg" />
     <Content Include="Images\projects\gevelbekleding.jpg" />
     <Content Include="Images\projects\sarking.jpg" />
-    <Content Include="Scripts\bootstrap-select\bootstrap-select.js.map" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -297,7 +297,6 @@
     <Content Include="robots.txt" />
     <Content Include="Scripts\appInsights.js" />
     <Content Include="Scripts\bootstrap-select\bootstrap-select.js" />
-    <Content Include="Scripts\bootstrap-select\bootstrap-select.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\custom\custom.js" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
@@ -317,8 +316,6 @@
     <Content Include="Scripts\photoswipe\photoswipe.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
-    <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
-    <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="sitemap.xml" />
     <Content Include="Web.config">
@@ -359,6 +356,7 @@
     <Content Include="Views\Home\_WhoWeAre.cshtml" />
     <Content Include="Views\Gallery\_Photoswipe.cshtml" />
     <Content Include="Views\Contact\_ContactInformation.cshtml" />
+    <Content Include="Views\Contact\_ContactForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

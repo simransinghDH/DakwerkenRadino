@@ -4,6 +4,7 @@ namespace DakwerkenRadino.Controllers
 {
     public class HomeController : Controller
     {
+        [OutputCache(Duration = 7200)]
         public ActionResult Index()
         {
             ViewBag.Title = "Uw dakwerken specialist";
@@ -13,6 +14,7 @@ namespace DakwerkenRadino.Controllers
         }
 
         [Route("over-ons")]
+        [OutputCache(Duration = 7200)]
         public ActionResult About()
         {
             ViewBag.Title = "Over ons";

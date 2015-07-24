@@ -5,6 +5,7 @@ namespace DakwerkenRadino.Controllers
     public class GalleryController : Controller
     {
         [Route("gallerij")]
+        [OutputCache(Duration = 7200)]
         public ActionResult Index()
         {
             ViewBag.Title = "Gallerij";
