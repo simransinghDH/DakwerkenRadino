@@ -235,11 +235,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-select.css" />
-    <Content Include="Content\bootstrap-select.min.css" />
     <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -250,7 +247,6 @@
     <Content Include="App_Config\log4net.config" />
     <Content Include="fonts\Jaapokkisubtract-Regular.otf" />
     <Content Include="fonts\ElegantLux-Mager.otf" />
-    <Content Include="Content\bootstrap-select.css.map" />
     <Content Include="Images\banner\banner-1.jpg" />
     <Content Include="Images\banner\banner-2.jpg" />
     <Content Include="Images\banner\banner-3.jpg" />
@@ -286,8 +282,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
     <Content Include="App_Config\RewriteRules.config" />
     <None Include="Properties\PublishProfiles\dakwerkenradino - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\dakwerkenradino - Web Deploy.pubxml" />
@@ -305,17 +299,12 @@
     <Content Include="Scripts\bootstrap-select\bootstrap-select.js" />
     <Content Include="Scripts\bootstrap-select\bootstrap-select.min.js" />
     <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\custom\custom.js" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
-    <Content Include="Scripts\jquery-2.1.4.min.js" />
-    <Content Include="Scripts\jquery-2.1.4.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\npm.js" />
     <Content Include="Content\photoswipe\default-skin\default-skin.css" />
@@ -324,10 +313,8 @@
     <Content Include="Content\photoswipe\default-skin\preloader.gif" />
     <Content Include="Scripts\photoswipe\photoswipe-custom.js" />
     <Content Include="Scripts\photoswipe\photoswipe-ui-default.js" />
-    <Content Include="Scripts\photoswipe\photoswipe-ui-default.min.js" />
     <Content Include="Content\photoswipe\photoswipe.css" />
     <Content Include="Scripts\photoswipe\photoswipe.js" />
-    <Content Include="Scripts\photoswipe\photoswipe.min.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
