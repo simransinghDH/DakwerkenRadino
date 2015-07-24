@@ -291,10 +291,6 @@
       <DependentUpon>ConnectionStrings.config</DependentUpon>
       <IsTransformFile>True</IsTransformFile>
     </None>
-    <None Include="App_Config\RewriteRules.Release.config">
-      <DependentUpon>RewriteRules.config</DependentUpon>
-      <IsTransformFile>True</IsTransformFile>
-    </None>
     <None Include="Properties\PublishProfiles\dakwerkenradino - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\dakwerkenradino - Web Deploy.pubxml" />
     <Content Include="Images\marketing\marketing-1.png" />
