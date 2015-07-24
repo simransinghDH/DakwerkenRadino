@@ -2,7 +2,11 @@
 
 @if (ViewBag.ShowSuccessMessage != null && ViewBag.ShowSuccessMessage)
 {
-    <h2 class="text-center text-uppercase">Bedankt voor de offerte aanvraag. Dakwerken Radino contacteert u zo spoedig mogelijk!</h2>
+    <div class="alert alert-success" role="alert">
+        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+        <span class="sr-only">Mail verstuurd:</span>
+        Bedankt voor de informatie aanvraag. Dakwerken&nbsp;Radino behandeld deze zo spoedig mogelijk!
+    </div>
 }
 else
 {

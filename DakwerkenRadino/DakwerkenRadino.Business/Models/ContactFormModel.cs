@@ -64,5 +64,13 @@ namespace DakwerkenRadino.Business.Models
         [DisplayName("Uw bericht")]
         [DataType(DataType.MultilineText)]
         public string Message { get; set; }
+
+        public override string ToString()
+        {
+            return string.Format(Core.Keys.Email.Message,
+                        Name, EmailAddres, PhoneNumber, StreetAndNumber,
+                        Zipcode, City, string.Join(", ", SelectedSortOfJob),
+                        Message);
+        }
     }
 }

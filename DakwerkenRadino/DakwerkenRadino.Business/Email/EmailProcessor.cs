@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 using DakwerkenRadino.Business.AppSetting;
 using DakwerkenRadino.Business.Models;
 using DakwerkenRadino.Core.Keys;
+using log4net;
 
 namespace DakwerkenRadino.Business.Email
 {
     public class EmailProcessor : IEmailProcessor
     {
         private readonly IConfigurationReader configurationReader;
+        private static readonly ILog Logger = LogManager.GetLogger(typeof(EmailProcessor));
 
         public EmailProcessor(IConfigurationReader configurationReader)
         {
@@ -27,10 +29,7 @@ namespace DakwerkenRadino.Business.Email
                     message.To.Add(new MailAddress(Core.Keys.Email.Destination, Core.Keys.Email.Destination));
                     message.IsBodyHtml = false;
                     message.Subject = Core.Keys.Email.Subject;
-                    message.Body = string.Format(Core.Keys.Email.Message,
-                        contactFormModel.Name, contactFormModel.EmailAddres, contactFormModel.PhoneNumber, contactFormModel.StreetAndNumber,
-                        contactFormModel.Zipcode, contactFormModel.City, string.Join(", ", contactFormModel.SelectedSortOfJob),
-                        contactFormModel.Message);
+                    message.Body = contactFormModel.ToString();
 
                     var smtpUser = new NetworkCredential
                     {
@@ -38,11 +37,16 @@ namespace DakwerkenRadino.Business.Email
                         Password = configurationReader.GetValue(AppSettings.Password)
                     };
 
+                    string host = configurationReader.GetValue(AppSettings.Host);
+
+                    Logger.Debug(string.Format("Current mail settings. Username: {0} - Password: {1} - Host:{2}", smtpUser.UserName, 
+                        smtpUser.Password, host));
+
                     using (var smtpClient = new SmtpClient())
                     {
                         smtpClient.UseDefaultCredentials = false;
                         smtpClient.Credentials = smtpUser;
-                        smtpClient.Host = configurationReader.GetValue(AppSettings.Host);
+                        smtpClient.Host = host;
                         smtpClient.Port = 26;
                         smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
                         await smtpClient.SendMailAsync(message);
@@ -51,13 +55,16 @@ namespace DakwerkenRadino.Business.Email
             }
             catch (SmtpException smtpException)
             {
+                Logger.Error("A SMTP exception occurred while sending the mail. Details: " + smtpException.GetBaseException(), smtpException);
                 return false;
             }
             catch (Exception exception)
             {
+                Logger.Error("A regular exception occurred while sending the mail. Details: " + exception.GetBaseException(), exception);
                 return false;
             }
 
+            Logger.Info("An offerte was requested: " + contactFormModel);
             return true;
         }
     }

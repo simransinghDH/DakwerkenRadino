@@ -1,10 +1,14 @@
 ﻿using System.Configuration;
 using System.Linq;
+using DakwerkenRadino.Business.Email;
+using log4net;
 
 namespace DakwerkenRadino.Business.AppSetting
 {
     public class ConfigurationReader : IConfigurationReader
     {
+        private static readonly ILog Logger = LogManager.GetLogger(typeof(EmailProcessor));
+
         public bool HasKey(string key)
         {
             bool result = false;
@@ -16,7 +20,7 @@ namespace DakwerkenRadino.Business.AppSetting
             }
             catch (ConfigurationErrorsException configEx)
             {
-                //TODO 
+                Logger.Error("An error has occured while reading a value from the configuration: " + configEx.GetBaseException(), configEx);
             }
 
             return result;
@@ -33,7 +37,7 @@ namespace DakwerkenRadino.Business.AppSetting
             }
             catch(ConfigurationErrorsException configEx)
             {
-                //TODO 
+                Logger.Error("An error has occured while reading a value from the configuration: " + configEx.GetBaseException(), configEx);
             }
 
             return result;
