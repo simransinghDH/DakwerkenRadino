@@ -12,7 +12,8 @@ namespace DakwerkenRadino
                         "~/Scripts/custom/custom.js",
                         "~/Scripts/bootstrap.js",
                         "~/Scripts/respond.js",
-                        "~/Scripts/bootstrap-select/bootstrap-select.js"));
+                        "~/Scripts/bootstrap-select/bootstrap-select.js",
+                        "~/Scripts/ga/ga-custom.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
