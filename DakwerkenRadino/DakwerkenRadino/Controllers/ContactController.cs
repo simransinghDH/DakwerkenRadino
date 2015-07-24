@@ -1,14 +1,14 @@
-﻿using System.Web.Mvc;
-using DakwerkenRadino.Business.Models;
+﻿using System.Threading.Tasks;
+using System.Web.Mvc;
 using DakwerkenRadino.Business.Email;
-using System.Threading.Tasks;
+using DakwerkenRadino.Business.Models;
 
 namespace DakwerkenRadino.Controllers
 {
     [RoutePrefix("contact")]
     public class ContactController : Controller
     {
-        private IEmailProcessor emailProcessor { get; set; }
+        private readonly IEmailProcessor emailProcessor;
 
         public ContactController(IEmailProcessor emailProcessor)
         {

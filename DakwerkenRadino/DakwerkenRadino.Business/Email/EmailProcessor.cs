@@ -1,19 +1,16 @@
-﻿using DakwerkenRadino.Business.Models;
-using DakwerkenRadino.Business.AppSetting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System;
 using System.Net;
 using System.Net.Mail;
-using System.Text;
 using System.Threading.Tasks;
+using DakwerkenRadino.Business.AppSetting;
+using DakwerkenRadino.Business.Models;
 using DakwerkenRadino.Core.Keys;
 
 namespace DakwerkenRadino.Business.Email
 {
     public class EmailProcessor : IEmailProcessor
     {
-        private IConfigurationReader configurationReader;
+        private readonly IConfigurationReader configurationReader;
 
         public EmailProcessor(IConfigurationReader configurationReader)
         {
@@ -27,10 +24,10 @@ namespace DakwerkenRadino.Business.Email
                 using (var message = new MailMessage())
                 {
                     message.From = new MailAddress(contactFormModel.EmailAddres, contactFormModel.Name);
-                    message.To.Add(new MailAddress(DakwerkenRadino.Core.Keys.Email.Destination, DakwerkenRadino.Core.Keys.Email.Destination));
+                    message.To.Add(new MailAddress(Core.Keys.Email.Destination, Core.Keys.Email.Destination));
                     message.IsBodyHtml = false;
-                    message.Subject = DakwerkenRadino.Core.Keys.Email.Subject;
-                    message.Body = string.Format(DakwerkenRadino.Core.Keys.Email.Message,
+                    message.Subject = Core.Keys.Email.Subject;
+                    message.Body = string.Format(Core.Keys.Email.Message,
                         contactFormModel.Name, contactFormModel.EmailAddres, contactFormModel.PhoneNumber, contactFormModel.StreetAndNumber,
                         contactFormModel.Zipcode, contactFormModel.City, string.Join(", ", contactFormModel.SelectedSortOfJob),
                         contactFormModel.Message);

@@ -1,10 +1,12 @@
-﻿using System.Web.Mvc;
+﻿using System.Web;
+using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using log4net.Config;
 
 namespace DakwerkenRadino
 {
-    public class MvcApplication : System.Web.HttpApplication
+    public class MvcApplication : HttpApplication
     {
         protected void Application_Start()
         {
@@ -17,7 +19,7 @@ namespace DakwerkenRadino
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            log4net.Config.XmlConfigurator.Configure();
+            XmlConfigurator.Configure();
         }
     }
 }

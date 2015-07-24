@@ -7,19 +7,17 @@ namespace DakwerkenRadino
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+            //Scripts
             bundles.Add(new ScriptBundle("~/bundles/common").Include(
                         "~/Scripts/jquery-{version}.js",
                         "~/Scripts/custom/custom.js",
                         "~/Scripts/bootstrap.js",
                         "~/Scripts/respond.js",
-                        "~/Scripts/bootstrap-select/bootstrap-select.js",
-                        "~/Scripts/ga/ga-custom.js"));
+                        "~/Scripts/bootstrap-select/bootstrap-select.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/headerscripts").Include(
                         "~/Scripts/modernizr-*",
                         "~/Scripts/appInsights.js"));
@@ -29,6 +27,7 @@ namespace DakwerkenRadino
                       "~/Scripts/photoswipe/photoswipe.js",
                       "~/Scripts/photoswipe/photoswipe-custom.js"));
 
+            //Styles
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/Site.css"));

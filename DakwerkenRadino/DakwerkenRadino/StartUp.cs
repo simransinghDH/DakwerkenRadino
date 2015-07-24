@@ -1,9 +1,8 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using DakwerkenRadino;
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(DakwerkenRadino.StartUp))]
+[assembly: OwinStartup(typeof(StartUp))]
 
 namespace DakwerkenRadino
 {

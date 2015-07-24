@@ -1,21 +1,21 @@
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(DakwerkenRadino.App_Start.NinjectWebCommon), "Start")]
-[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(DakwerkenRadino.App_Start.NinjectWebCommon), "Stop")]
+using System;
+using System.Web;
+using DakwerkenRadino;
+using DakwerkenRadino.Business.AppSetting;
+using DakwerkenRadino.Business.Email;
+using Microsoft.Web.Infrastructure.DynamicModuleHelper;
+using Ninject;
+using Ninject.Web.Common;
+using WebActivatorEx;
 
-namespace DakwerkenRadino.App_Start
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(NinjectWebCommon), "Start")]
+[assembly: ApplicationShutdownMethod(typeof(NinjectWebCommon), "Stop")]
+
+namespace DakwerkenRadino
 {
-    using System;
-    using System.Web;
-
-    using Microsoft.Web.Infrastructure.DynamicModuleHelper;
-
-    using Ninject;
-    using Ninject.Web.Common;
-    using DakwerkenRadino.Business.Email;
-    using DakwerkenRadino.Business.AppSetting;
-
     public static class NinjectWebCommon 
     {
-        private static readonly Bootstrapper bootstrapper = new Bootstrapper();
+        private static readonly Bootstrapper Bootstrapper = new Bootstrapper();
 
         /// <summary>
         /// Starts the application
@@ -24,7 +24,7 @@ namespace DakwerkenRadino.App_Start
         {
             DynamicModuleUtility.RegisterModule(typeof(OnePerRequestHttpModule));
             DynamicModuleUtility.RegisterModule(typeof(NinjectHttpModule));
-            bootstrapper.Initialize(CreateKernel);
+            Bootstrapper.Initialize(CreateKernel);
         }
         
         /// <summary>
@@ -32,7 +32,7 @@ namespace DakwerkenRadino.App_Start
         /// </summary>
         public static void Stop()
         {
-            bootstrapper.ShutDown();
+            Bootstrapper.ShutDown();
         }
         
         /// <summary>

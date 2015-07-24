@@ -248,6 +248,7 @@
     <Content Include="App_Config\log4net.config" />
     <Content Include="fonts\Jaapokkisubtract-Regular.otf" />
     <Content Include="fonts\ElegantLux-Mager.otf" />
+    <Content Include="google5af20764acd6bd5d.html" />
     <Content Include="Images\banner\banner-1.jpg" />
     <Content Include="Images\banner\banner-2.jpg" />
     <Content Include="Images\banner\banner-3.jpg" />
@@ -369,6 +370,10 @@
     <ProjectReference Include="..\DakwerkenRadino.Business\DakwerkenRadino.Business.csproj">
       <Project>{A9157202-3D4E-45F6-B1D6-4BDF801C5442}</Project>
       <Name>DakwerkenRadino.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DakwerkenRadino.Core\DakwerkenRadino.Core.csproj">
+      <Project>{a319efb3-33a7-42a7-a6f5-ff85713c88ff}</Project>
+      <Name>DakwerkenRadino.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

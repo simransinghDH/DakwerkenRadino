@@ -64,6 +64,7 @@ E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadin
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\DakwerkenRadino.pdb
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\Antlr3.Runtime.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\DakwerkenRadino.Business.dll
+E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\DakwerkenRadino.Core.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\Elmah.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\Elmah.Mvc.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\EntityFramework.dll
@@ -104,6 +105,7 @@ E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadin
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\WebActivatorEx.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\WebGrease.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\DakwerkenRadino.Business.pdb
+E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\DakwerkenRadino.Core.pdb
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\Antlr3.Runtime.pdb
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\EntityFramework.xml
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\EntityFramework.SqlServer.xml
