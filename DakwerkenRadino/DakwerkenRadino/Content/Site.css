@@ -255,6 +255,7 @@ h1 {
 
 #marketing-section .marketing > .row p {
     line-height: 22px;
+    text-align: justify;
 }
 
 #marketing-section > .marketing > .row > button {
@@ -299,6 +300,10 @@ h1 {
     background-position: 50%;
     background-color: #F0BA8B;
     padding-top: 40px;
+}
+
+#project-section-small .marketing {
+    background-color: #F0BA8B;
 }
 
 #project-section-small h1 {

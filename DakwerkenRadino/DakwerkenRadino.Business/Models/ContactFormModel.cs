@@ -50,7 +50,7 @@ namespace DakwerkenRadino.Business.Models
             {
                 return new[] 
                 {
-                    new SelectListItem { Text = "Roofing", Value = "roofing" },
+                    new SelectListItem { Text = "Roofing en EPDM", Value = "roofing" },
                     new SelectListItem { Text = "Pannen", Value = "pannen" },
                     new SelectListItem { Text = "Zink en koper", Value = "zink en koper" },
                     new SelectListItem { Text = "Isolatie", Value = "isolatie" },

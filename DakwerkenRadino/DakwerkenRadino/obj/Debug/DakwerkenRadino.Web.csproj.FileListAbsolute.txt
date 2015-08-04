@@ -138,5 +138,3 @@ E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadin
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\obj\Debug\DakwerkenRadino.Web.csprojResolveAssemblyReference.cache
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\obj\Debug\DakwerkenRadino.dll
 E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\obj\Debug\DakwerkenRadino.pdb
-E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\DakwerkenRadino.dll.CodeAnalysisLog.xml
-E:\Documenten\CodeRepo\ProjectDakwerkenRadino\src\DakwerkenRadino\DakwerkenRadino\bin\DakwerkenRadino.dll.lastcodeanalysissucceeded
