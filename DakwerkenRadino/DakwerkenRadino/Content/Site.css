@@ -706,6 +706,10 @@ footer .pull-right-responsive {
     margin-bottom: 20px;
 }
 
+#work-categories .panel h5 {
+    margin-top: 35px;
+}
+
 #work-categories .panel small {
     line-height: 30px;
 }
