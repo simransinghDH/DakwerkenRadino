@@ -280,6 +280,7 @@
     <Content Include="Images\marketing\marketing-4.png" />
     <Content Include="Images\projects\dakdetails.jpg" />
     <Content Include="Images\projects\gevelbekleding.jpg" />
+    <Content Include="Images\projects\groendaken.jpg" />
     <Content Include="Images\projects\sarking.jpg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -304,6 +305,7 @@
     <Content Include="Images\marketing\marketing-1.png" />
     <Content Include="Images\marketing\marketing-2.png" />
     <Content Include="Images\marketing\marketing-3.png" />
+    <Content Include="Images\projects\sarkingdaken.jpg" />
     <Content Include="Images\triangles.svg" />
     <Content Include="Images\up.png" />
     <Content Include="robots.txt" />
